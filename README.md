@@ -11,6 +11,9 @@ The pipeline simulates how banks assess customer risk categories (Low / Medium /
 
 S3 (Raw Zone) → AWS Glue (ETL) → S3 (Curated Zone) → Glue Data Catalog → Athena → QuickSight Dashboard
 
+<img width="800" height="399" alt="credit_risk_pipeline_architecture" src="https://github.com/user-attachments/assets/45d4c196-482f-4a4f-ae0e-8a8b1f2b883a" />
+
+
 ⚙️ Tech Stack
 --AWS S3 – Data lake (raw & curated zones)
 --AWS Glue – ETL jobs + Data Catalog crawlers
@@ -94,6 +97,12 @@ In Athena console:
   --Set result location → s3://credit-risk-demo-<your-initials>-dev/athena_results/
   --Choose database: credit_risk_dev
 - --Run queries from athena/queries/
+      --  Count By Risk ::
+            ![count_by_risk](https://github.com/user-attachments/assets/cdcb5aa8-7899-4634-88a4-d106f517ecde)
+      --  High Risk Customers :: 
+           <img width="949" height="399" alt="Sample_high_risk_customers" src="https://github.com/user-attachments/assets/156a94df-3019-421c-8d7d-7290cc71951b" />
+      --  Portfolio exposure by risk band ::
+              ![Portfolio exposure by risk band](https://github.com/user-attachments/assets/d60054a3-e530-447d-9e10-074a3ed99db8)
 
 7️⃣ QuickSight Dashboard
 
