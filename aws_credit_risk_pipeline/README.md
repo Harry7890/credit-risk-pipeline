@@ -1,4 +1,4 @@
-A1) S3 bucket & folders (console) – 10 min
+A1) S3 bucket & folders (console) 
 
 Create bucket: credit-risk-demo-<your-initials>-dev
 Folders inside the bucket:
@@ -6,7 +6,7 @@ raw/customers/, raw/loans/, raw/bureau/
 curated/credit_risk/
 Upload the sample CSVs (below) to their respective raw/* folders.
 
-A2) Commit sample data & config – 5 min
+A2) Commit sample data & config 
 
 data/sample/customers.csv
 data/sample/loans.csv
@@ -25,9 +25,9 @@ athena_output_s3: s3://credit-risk-demo-<your-initials>-dev/athena_results/
 
 Commit & push on feat/s3-glue-etl.
 
-A3) Glue job (Studio Visual or Script) – 35–40 min
+A3) Glue job (Studio Visual or Script) – 
 
-Create IAM role for Glue with S3 read/write (Person B will also add a policy; ok to use AWS managed for now).
+Create IAM role for Glue with S3 read/write .
 Glue Studio → Jobs → Script editor (simpler than visual for copy/paste).
 Create job credit-risk-batch-etl (Glue 4.0, Python 3).
 write glue/jobs/credit_risk_batch_etl.py:
